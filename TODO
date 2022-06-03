@@ -1,0 +1,5 @@
+TODO
+====
+
+- Implemented Interface query for NativeWifi.
+o Bug in printing the description of interfaces, probably due to the conversion from wide char to mb char * in private/nativewifie.c

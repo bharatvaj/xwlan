@@ -1,0 +1,25 @@
+BinPackArguments: false
+BinPackParameters: false
+BraceWrapping:
+  AfterControlStatement: false
+  AfterEnum: false
+  AfterExternBlock: false
+  AfterFunction: false
+  AfterObjCDeclaration: false
+  AfterStruct: false
+  AfterUnion: false
+  BeforeElse: false
+  IndentBraces: true
+BreakStringLiterals: false
+ColumnLimit: 80
+ContinuationIndentWidth: 8
+IndentCaseLabels: false
+IndentGotoLabels: false
+IndentWidth: 4
+MaxEmptyLinesToKeep: 1
+PointerAlignment: Left
+ReflowComments: false
+SortIncludes: true
+TabWidth: 4
+UseCRLF: false
+UseTab: ForIndentation

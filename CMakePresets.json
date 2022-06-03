@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 20,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "base",
+      "binaryDir": "${sourceDir}/out/${presetName}",
+      "generator": "Ninja",
+      "cacheVariables": {
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/.sysroot/${presetName}",
+        "CMAKE_PREFIX_PATH": "${sourceDir}/out/.sysroot/${presetName}",
+        "CMAKE_FIND_ROOT_PATH": "${sourceDir}/out/.sysroot/${presetName}",
+        "CMAKE_FIND_ROOT_PATH_MODE_INCLUDE": "ONLY",
+        "CMAKE_FIND_ROOT_PATH_MODE_LIBRARY": "ONLY"
+      }
+    },
+    {
+      "name": "x86_64-pc-windows-msvc",
+      "displayName": "x86_64-pc-windows-msvc",
+      "inherits": "base",
+      "generator": "Visual Studio 17 2022",
+      "cacheVariables": {
+        "CMAKE_MSVC_RUNTIME_LIBRARY": "MultiThreadedDebugDLL",
+        "ENABLE_NATIVE_WIFI": "ON"
+      }
+    }
+  ]
+}

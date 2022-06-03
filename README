@@ -1,0 +1,15 @@
+xwlan
+=====
+
+xwlan - cross platform wireless lan
+
+Cross platform library to scan, query and connect via wlan interfaces.
+
+The following backends are supported
+
+* NativeWifi (win32)
+
+BUILD
+-----
+cmake --preset base
+cmake --build out\base
