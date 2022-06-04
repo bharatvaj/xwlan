@@ -8,7 +8,7 @@
  */
 
 int main(int argc, char* argv[]) {
-	xwlan_log(1);
+	xwlan_log_level(1);
 	xwlan_context* ctx = xwlan_create_context();
 	xwlan_error_status err = xwlan_check_context(ctx);
 	if (err != XWLAN_OK) {

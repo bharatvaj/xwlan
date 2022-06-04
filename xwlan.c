@@ -6,7 +6,7 @@
 
 #include <clog/clog.h>
 
-void xwlan_log(uint8_t log_level) {
+void xwlan_log_level(uint8_t log_level) {
 	if (log_level) {
 		clog_enable();
 	} else {

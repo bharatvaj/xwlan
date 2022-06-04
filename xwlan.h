@@ -60,7 +60,12 @@ typedef struct xwlan_context {
 	struct xwlan_context_native* native_context;
 } xwlan_context;
 
-void xwlan_log(uint8_t log_level);
+/*
+ * log_level
+ * 0 will disable logging
+ * 1 will enable logging
+ */
+void xwlan_log_level(uint8_t log_level);
 
 /*
  * Returns non-null `xwlan_context*` if successful
