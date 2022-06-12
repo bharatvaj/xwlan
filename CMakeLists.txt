@@ -15,6 +15,8 @@ if(ENABLE_NATIVE_WIFI)
 	list(APPEND XWLAN_SRCS ${XWLAN_NATIVE_WIFI_SRCS})
 	if(WIN32)
 		list(APPEND XWLAN_REQUIRED_LIBS Wlanapi)
+	else()
+		message("NativeWifi not supported other than Window")
 	endif()
 endif()
 
@@ -27,6 +29,3 @@ target_include_directories(xwlan PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
     $<INSTALL_INTERFACE:include>
 )
-
-enable_testing()
-add_subdirectory(test)
