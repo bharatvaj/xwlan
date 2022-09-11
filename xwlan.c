@@ -1,7 +1,6 @@
-#include <xwlan.h>
-
 #include <stddef.h>
 
+#include <xwlan.h>
 #include <private/xwlanprivate.h>
 
 #include <clog/clog.h>

@@ -1,17 +1,13 @@
-#include <private/nativewifi.h>
-
-#include <windows.h>
-#include <wlanapi.h>
-
 #include <objbase.h>
 #include <stdlib.h>
 #include <wchar.h>
+#include <windows.h>
+#include <wlanapi.h>
 #include <wtypes.h>
 
-#include <clog/clog.h>
+#include <private/nativewifi.h>
 
-#pragma comment(lib, "wlanapi.lib")
-#pragma comment(lib, "clog.lib")
+#include <clog/clog.h>
 
 #define XWLAN_CTX_NATIVE(CTX) (xwlan_context_native*)CTX->native_context
 
